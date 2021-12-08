@@ -1,28 +1,40 @@
+
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 html{
-    font-size: 1.125em; /* 18px / 16px */
-    line-height:1.22em;
-    padding: 1.2em 0.75em;
+    font-size: 1.25em; /* 20px / 16px */
+    line-height: 2em;  
 }
 
 
 body {
-    background-color: #F6EACB;;
+    padding-top: 3em;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    background-color: #F6EACB;
 }
 
-h1 , h2{
-    font-size: 1.73em; /* 31.104 px */
-    line-height: 1.22em;
+h1,
+h2,
+h1{
+font-size: 1.777em; /* 31.984 / 18 = */
+line-height: 1.032em; /* 33 / 31.984 = */
+padding-bottom: 0.688em; /* 22 / 31.984 = */
+} 
+h2{
+font-size: 1.777em; /* 31.984 / 18 = */
+line-height: 1.032em; /* 33 / 31.984 = */
+padding-bottom: 0.688em; /* 22 / 31.984 = */
 }
 
 
 li a:hover {
-    background-color: #111;
+background-color: grey;
 }
 .active {
-    background-color: #4CAF50;
+background-color: orangered;
 }
 
 /*
@@ -34,7 +46,7 @@ li:last-child {
     border-right: none;
 }
 p  {
-    color: #D83938;
+    color: black;
     font-family: serif;
 
 }
@@ -57,6 +69,8 @@ max-width: 30%;
 #navigation{
     text-align: center;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
 #nav li{
@@ -68,6 +82,18 @@ max-width: 30%;
 }
 
 
+/* Responsive Media */
+image,
+video {
+display: block;
+width: 50%;
+max-height: 40%;  
+}
+/*increase font size for larger screens*/
+@media screen and (min-width: 640px) {
+html {
+    font-size: 1.25em; /* 20 / 16 */
+}
 @media screen and (min-width: 300px) {
     img{
         
